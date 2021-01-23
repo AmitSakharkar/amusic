@@ -14,8 +14,16 @@ export function Player() {
     width: 500px;
     height: 500px;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75);
+    background-image: linear-gradient(
+      to bottom,
+      #ebe6f8,
+      #ece5f6,
+      #ede4f5,
+      #eee4f3,
+      #efe3f1
+    );
   `;
 
   const Loading = styled.div`

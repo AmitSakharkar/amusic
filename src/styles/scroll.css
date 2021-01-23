@@ -1,0 +1,51 @@
+#scroll::-webkit-scrollbar {
+  height: 2px;
+  width: 5px;
+  background-color: #fafafa;
+}
+#scroll::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 12px;
+}
+#scroll::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+#scroll::-webkit-scrollbar-track {
+  border: 2px solid transparent;
+  margin-right: 15px;
+}
+#scroll_table::-webkit-scrollbar {
+  height: 3px;
+  width: 5px;
+  background-color: #fafafa;
+}
+#scroll_table::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 12px;
+}
+#scroll_table::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+#scroll_table::-webkit-scrollbar-track {
+  border: 2px solid transparent;
+  margin-right: 15px;
+}
+#scroll_table_selected::-webkit-scrollbar {
+  height: 3px;
+  width: 5px;
+  background-color: #fafafa;
+}
+#scroll_table_selected::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 12px;
+}
+#scroll_table_selected::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+#scroll_table_selected::-webkit-scrollbar-track {
+  border: 2px solid transparent;
+  margin-right: 15px;
+}

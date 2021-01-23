@@ -6,7 +6,6 @@ export function Playlist(props) {
   const Container = styled.div`
     height: 260px;
     box-sizing: border-box;
-    overflow: scroll;
   `;
 
   const Item = styled.div`
@@ -30,7 +29,7 @@ export function Playlist(props) {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
-    width: 100%;
+    width: 80%;
     justify-content: center;
   `;
 
