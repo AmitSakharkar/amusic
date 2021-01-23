@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Playlist } from "./Playlist";
 import { Top } from "./Top";
 import { fetchPlaylist, PlaylistContext } from "../components/store/playlist";
+// import "../index.css";
 
 export function Player() {
   const [playlist, setPlaylist] = useState([]);
