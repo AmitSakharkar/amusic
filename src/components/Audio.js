@@ -109,6 +109,7 @@ export function Audio(props) {
             preload="metadata"
             onLoadedMetadata={handleMetadata}
             onTimeUpdate={() => handleTimeupdate(value.handleNextTrack)}
+            muted="muted"
           >
             <source src={props.url} type="audio/ogg" />
             Ooops, browser need to be updated.

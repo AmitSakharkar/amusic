@@ -5,7 +5,7 @@ import { Top } from "./Top";
 import { fetchPlaylist, PlaylistContext } from "../components/store/playlist";
 // import "../index.css";
 
-export function Player() {
+export function Player(props) {
   const [playlist, setPlaylist] = useState([]);
   const [currentTrack, setCurrentTrack] = useState(0);
 
@@ -69,7 +69,6 @@ export function Player() {
       </Container>
     );
   }
-
   return (
     <Container>
       <PlaylistContext.Provider value={{ handleNextTrack, handlePrevTrack }}>
