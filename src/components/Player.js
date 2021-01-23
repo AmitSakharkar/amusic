@@ -11,8 +11,8 @@ export function Player() {
 
   const Container = styled.div`
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 90%;
+    height: 70%;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75);

@@ -6,7 +6,7 @@ import { Audio } from "./Audio";
 export function Top(props) {
   const Container = styled.div`
     border-radius: 5px 5px 0 0;
-    height: 240px;
+    height: 40%;
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;

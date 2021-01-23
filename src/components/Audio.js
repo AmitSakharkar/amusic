@@ -43,9 +43,16 @@ export function Audio(props) {
   const Container = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
   `;
+  // justify-content: space-between;
 
+  const CustomProgressBar = styled.div`
+    display: flex;
+    place-content: center;
+    place-items: center;
+  `;
   const initPlayer = () => {
     audioPlayer = document.getElementById("audioPlayer");
   };
@@ -107,35 +114,39 @@ export function Audio(props) {
             Ooops, browser need to be updated.
           </audio>
           <Container>
-            <Icon
-              style={iconStyles}
-              icon={ic_skip_previous}
-              onClick={value.handlePrevTrack}
-              size={30}
-            />
-            <Icon
-              style={iconStyles}
-              icon={isPlaying ? ic_pause : ic_play_arrow}
-              onClick={handlePlay}
-              size={30}
-            />
-            <Icon
-              size={30}
-              style={iconStyles}
-              icon={ic_stop}
-              onClick={handleStop}
-            />
-            <Icon
-              style={iconStyles}
-              icon={ic_skip_next}
-              onClick={value.handleNextTrack}
-              size={30}
-            />
-            <Counter>
-              {getSecondsToMinutesAndSeconds(currentTrackMoment)}
-            </Counter>
-            <ProgressBar progressPercent={progressBarWidth} width={"200px"} />
-            <Counter>{currentTrackDuration || "0 : 00"}</Counter>
+            <CustomProgressBar>
+              <Counter>
+                {getSecondsToMinutesAndSeconds(currentTrackMoment)}
+              </Counter>
+              <ProgressBar progressPercent={progressBarWidth} width={"200px"} />
+              <Counter>{currentTrackDuration || "0 : 00"}</Counter>
+            </CustomProgressBar>
+            <div>
+              <Icon
+                style={iconStyles}
+                icon={ic_skip_previous}
+                onClick={value.handlePrevTrack}
+                size={30}
+              />
+              <Icon
+                style={iconStyles}
+                icon={isPlaying ? ic_pause : ic_play_arrow}
+                onClick={handlePlay}
+                size={30}
+              />
+              <Icon
+                size={30}
+                style={iconStyles}
+                icon={ic_stop}
+                onClick={handleStop}
+              />
+              <Icon
+                style={iconStyles}
+                icon={ic_skip_next}
+                onClick={value.handleNextTrack}
+                size={30}
+              />
+            </div>
           </Container>
         </div>
       )}
